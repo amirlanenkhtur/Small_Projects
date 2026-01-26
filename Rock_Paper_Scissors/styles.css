@@ -3,7 +3,7 @@ body {
     align-items: center;
     height: 100vh;
     position: relative;
-    background-color: wheat;
+    background-color:darksalmon;
 }
 
 main {
@@ -13,14 +13,15 @@ main {
 
 p {
     display: flex;
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
     justify-content: center;
+    font-weight: bold;
+    font: 2em 'Courier New', Courier, monospace;
+    font-style: italic;
 }
 
 #results {
     display: flex;
-    gap: 4rem;
+    gap: 10vw;
     justify-content: center;
     align-items: center;
 }
@@ -28,8 +29,6 @@ p {
 #results > div {
     height: 30dvh;
     width: 30dvw;
-    background-color: black;
-    margin-bottom: 10dvw;
 }
 
 #options {
@@ -41,9 +40,9 @@ p {
 
 button {
     border-radius: 10cm;
-    width: 30dvw;
+    width: 25dvw;
     height: 10dvw;
-    background-color: wheat;
+    background-color:coral;
     transition-duration: 0.5s;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
@@ -51,8 +50,8 @@ button {
 }
 
 button:hover {
-    background-color: darkgoldenrod;
-    box-shadow: 0 4px 8px 0 chocolate;
+    background-color: plum;
+    box-shadow: 0 4px 8px 0 crimson;
 }
 
 #results > div > img {
@@ -60,4 +59,27 @@ button:hover {
     height: 100%;
     object-fit: contain;
     flex-shrink: 1;
+    filter: drop-shadow(3px 3px 3px);
+}
+
+@keyframes shake {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-10px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    font: 30px 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 5dvw;
 }

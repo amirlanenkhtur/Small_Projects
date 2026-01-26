@@ -10,18 +10,20 @@
         <main>
             <p> Let's play rock, paper, scissors! </p>
             <section id="results">
-                <div id="User-result">
-                    <img src="assets/rock.png">
+                <div>
+                    <img id="User_result" src="assets/rock_left.png">
                 </div>
-                <div id="Computer-result">
-                    <img src="assets/rock.png"
+                <div>
+                    <img id="Computer_result" src="assets/rock_right.png">
                 </div>
             </section>
 
+            <div id="countdown"></div>
+
             <section id="options">
-                <button> Rock </button>
-                <button> Paper </button>
-                <button> Scissors </button>
+                <button onclick="selectRock()"> Rock </button>
+                <button onclick="selectPaper()"> Paper </button>
+                <button onclick="selectScissor()"> Scissors </button>
             </section>
         </main>
 
