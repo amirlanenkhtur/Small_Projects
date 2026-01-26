@@ -1,0 +1,57 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: wheat;
+}
+
+main {
+    position: relative;
+    top: 20%;
+}
+
+p {
+    display: flex;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+}
+
+#results {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#results > div {
+    height: 30dvh;
+    width: 30dvw;
+    background-color: black;
+    color: aqua;
+    margin-bottom: 10dvw;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    border-radius: 10cm;
+    width: 30dvw;
+    height: 10dvw;
+    background-color: wheat;
+    transition-duration: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: darkgoldenrod;
+    box-shadow: 0 4px 8px 0 chocolate;
+}
