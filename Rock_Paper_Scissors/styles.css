@@ -29,7 +29,6 @@ p {
     height: 30dvh;
     width: 30dvw;
     background-color: black;
-    color: aqua;
     margin-bottom: 10dvw;
 }
 
@@ -54,4 +53,11 @@ button {
 button:hover {
     background-color: darkgoldenrod;
     box-shadow: 0 4px 8px 0 chocolate;
+}
+
+#results > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 1;
 }
