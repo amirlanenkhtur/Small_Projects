@@ -39,7 +39,7 @@ function StartGame(value){
             setTimeout(() => {
                 userImg.classList.remove('shake');
                 computerImg.classList.remove('shake');
-                userImg.src = UserSelection;
+                userImg.src = UserSelection; 
                 computerImg.src = computerImages[computer];
 
                 const result = (value - computer + 3) % 3;

@@ -51,7 +51,7 @@ function calculate(){
         <div>
             <p> ${number1} </p>
         </div>
-        ` 
+        `
     } else if (arithmeticTap == "/"){
         number1 = number1 / number2;
         result.innerHTML = `
